@@ -1,8 +1,9 @@
-%module goparquet
+%module(directors="1") goparquet
 
 %{
-    #include "goparquet.h"
+#include "goparquet.h"
 %}
 
 %include <std_string.i>
+%feature("director");
 %include "goparquet.h"
